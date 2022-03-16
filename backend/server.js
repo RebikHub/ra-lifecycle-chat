@@ -17,21 +17,22 @@ const router = new Router();
 router.get('/messages', async (ctx, next) => {
     const from = Number(ctx.request.query.from)
     if (ctx.request.query.from === 0) {
-        ctx.response.body = messages;
+        ctx.response.body = JSON.stringify(messages);
         return;
     }
 
     const fromIndex = messages.findIndex(o => o.id === from);
     if (fromIndex === -1) {
-        ctx.response.body = messages;
+        ctx.response.body = JSON.stringify(messages);
         return;
     }
 
-    ctx.response.body = messages.slice(fromIndex + 1);
+    ctx.response.body = JSON.stringify(messages.slice(fromIndex + 1));
 });
 
 router.post('/messages', async(ctx, next) => {
-    messages.push({...ctx.request.body, id: nextId++});
+    const message = JSON.parse(ctx.request.body);
+    messages.push({data: message, id: nextId++});
     ctx.response.status = 204;
 });
 

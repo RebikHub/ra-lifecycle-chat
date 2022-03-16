@@ -2,3 +2,57 @@
   margin: 0;
   padding: 0;
 }
+#root {
+  width: 600px;
+  margin: 20px auto;
+}
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+}
+.chat-title {
+ text-align: center;
+}
+.chat-room {
+  display: flex;
+  height: 100%;
+  padding: 5px;
+}
+.message {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  width: fit-content;
+  margin-top: auto;
+}
+.right {
+  
+}
+.left {
+
+}
+.chat-form {
+  position: relative;
+  margin-top: auto;
+}
+.chat-input {
+  padding-left: 4px;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.send-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url(../image/send.png);
+  border: none;
+  background-color: white;
+  background-position: center;
+  background-size: contain;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
