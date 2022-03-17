@@ -35,9 +35,9 @@ export default function App() {
   function scrollBottom() {
     chatRef.current.scrollIntoView({block: "start"})
   }
- // https://react-note-back.herokuapp.com
+
   async function fetchGet(id) {
-    const url = `http://10.4.4.10:7777/messages?from=${id}`
+    const url = `https://react-note-back.herokuapp.com/messages?from=${id}`
     const response = await fetch(url)
     const data = await response.json()
     if (data.length !== 0 && data[0].id > lastId) {
@@ -47,7 +47,7 @@ export default function App() {
   }
 
   async function fetchPost(data) {
-    const url = 'http://10.4.4.10:7777/messages/'
+    const url = 'https://react-note-back.herokuapp.com/messages/'
     await fetch(url, {
       method: 'POST',
       body: JSON.stringify(data)
