@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useRef } from "react";
 import Message from "./components/Message";
 import MessageSend from "./components/MessageSend";
