@@ -16,7 +16,9 @@
 }
 .chat-room {
   display: flex;
-  height: 100%;
+  flex-direction: column;
+  overflow: auto;
+  height: 800px;
   padding: 5px;
 }
 .message {
@@ -24,7 +26,7 @@
   border-radius: 10px;
   padding: 10px;
   width: fit-content;
-  margin-top: auto;
+  margin-top: 3px;
 }
 .right {
   

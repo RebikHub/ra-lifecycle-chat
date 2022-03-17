@@ -34,6 +34,7 @@ router.post('/messages', async(ctx, next) => {
     const message = JSON.parse(ctx.request.body);
     messages.push({data: message, id: nextId++});
     ctx.response.status = 204;
+    ctx.response.body = JSON.stringify(nextId);
 });
 
 app.use(router.routes()).use(router.allowedMethods());
