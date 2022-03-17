@@ -1,3 +1,4 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/wdcvx498lr0y940w/branch/master?svg=true)](https://ci.appveyor.com/project/RebikHub/ra-lifecycle-chat/branch/master)
 
 [Анонимный чат](https://rebikhub.github.io/ra-lifecycle-chat/)
 
