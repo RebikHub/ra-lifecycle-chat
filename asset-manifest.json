@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ra-lifecycle-chat/static/css/main.1270f166.css",
+    "main.js": "/ra-lifecycle-chat/static/js/main.c3cfed16.js",
+    "index.html": "/ra-lifecycle-chat/index.html",
+    "main.1270f166.css.map": "/ra-lifecycle-chat/static/css/main.1270f166.css.map",
+    "main.c3cfed16.js.map": "/ra-lifecycle-chat/static/js/main.c3cfed16.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1270f166.css",
+    "static/js/main.c3cfed16.js"
+  ]
+}
